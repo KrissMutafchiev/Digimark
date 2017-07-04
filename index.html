@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-querys.css">
+    <script src="js/form-validation.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<!--CONTENT-HEADER-BOX-->
+<div id="main-content-box" class="container-fluid">
+    <!-- NAVIGATION -->
+    <nav id="nav-bar-top" class="navbar  nav-fixed-top" role="navigation">
+        <div class="">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="icon-bar mb-icon">&diams;&diams;&diams;</span>
+                    <span class="icon-bar mb-icon">&diams;&diams;&diams;</span>
+                    <span class="icon-bar mb-icon">&diams;&diams;&diams;</span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="Resources/logo.png" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse " id="navbar">
+                <ul  class="nav navbar-nav">
+                    <li>
+                        <a href="#">menu1</a>
+                    </li>
+                    <li>
+                        <a href="#">menu2</a>
+                    </li>
+                    <li>
+                        <a href="#">menu3</a>
+                    </li>
+                    <li>
+                        <a href="#">menu4</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--END NAVIGATION -->
+    <!--HEADER-->
+    <div id="header-titles" class="">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+        <h2>Ut tempor dignissim sem ac tempus.</h2>
+    </div>
+    <div class="dude-box">
+        <img class="img-responsive dude-img" src="" data-1x="Resources/dude-1.png" data-2x="Resources/dude-1@2x.png">
+    </div>
+    <div id="header-bottom-box" class="">
+        <div class="buttons-header ">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                <button class="btn-header pull-right">My Button1</button>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-4 col-xs-4">
+                <button class="btn-header">My Button2</button>
+            </div>
+        </div>
+    </div>
+    <!--END HEADER-->
+</div>
+<!--END CONTENT-HEADER-BOX-->
+<!--SECTION-CONTENT-BOX-->
+<div class="section-content-box row">
+        <div class="section-title">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </div>
+        <div class="description-text">
+            <p class="">Loren ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor dignissim sem ac tempus. Donec egestas finibus ex, ut congue mi porttitor eu. Integer vehicula felis nec mi maximus, non altrices arcu vestibulum. Sed id malesuada arcu,sed mattis nisl. Aliquam arat bolupat. Mauris efficitur tristique nulla. Suspendisse nec leo sapien. Donec iaculis, nunc eu feugiat efficitur, nisi magna porttitor dui, vitae bibendum sem quam interdum tortor. In hac habitasse platea dictumst.</p>
+        </div>
+        <div class="space-btw"></div>
+        <div class="img-box-des">
+            <img class="img-responsive" src=""data-1x="Resources/dude-2.png" data-2x="Resources/dude-2@2x.png">
+        </div>
+
+</div>
+<!--END SECTION-CONTENT-BOX-->
+<div class="black-line row"></div>
+<!--FORM-->
+<div class="form-box container-fluid">
+    <form action="#" onSubmit="return validate(this);" method="post" accept-charset="utf-8" class="form" role="form">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                <label>Your name<span class="req-star">*</span></label>
+                <input id="form-name" type="text" name="form-name" value="" required class="form-control input-lg" placeholder="Enter your name here"  />
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                <label>Your Email<span class="req-star">*</span></label>
+                <input id="email-form" type="text" name="email" value="" required class="form-control input-lg" placeholder="Enter your email here"  />
+             </div>
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                <label>Reason<span class="req-star">*</span></label>
+                <select  id="reason" name="reason" required class = "form-control input-lg">
+                    <option value="01" disabled selected>Please select and option</option>
+                    <option value="01">Support</option>
+                    <option value="02">Problem</option>
+                    <option value="03">Info</option>
+                    <option value="04">Contact</option>
+                </select>
+            </div>
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                <div class="form-group">
+                    <label for="message-text">Your Massage<span class="req-star">*</span></label>
+                    <textarea id="message-text" required class="form-control" rows="5"  placeholder="Enter your message here"></textarea>
+                </div>
+            </div>
+        </div>
+        <button class="btn-header btn-sbm" type="submit">Send your message</button>
+    </form>
+</div>
+<!--END FORM-->
+<div class="black-line row"></div>
+<!--FOOTER-->
+<div class="footer-box">
+    <div class="col-md-6">
+        <p class="center-block"><strong>2017 Lorem inpsum dolor sit amet&#169;</strong></p>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-inline pull-right">
+            <li class="">
+                <a href="#">
+                    <img src="" alt="fb" data-1x="Resources/fb.png" data-2x="Resources/gp.fb@2x.png">
+                </a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <img src="" alt="tw" data-1x="Resources/tw.png" data-2x="Resources/tw.png@2x.png">
+                </a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <img src="" alt="in" data-1x="Resources/in.png" data-2x="Resources/in.png@2x.png">
+                </a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <img src="" alt="gp" data-1x="Resources/gp.png" data-2x="Resources/gp.png@2x.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--END FOOTER-->
+<!--LIB'S-->
+<script src="lib/jquery-3.1.0.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/retina-sense.js"></script>
+<!--END LIB'S-->
+</body>
+</html>
